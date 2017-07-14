@@ -1,0 +1,54 @@
+	<a data-toggle="modal" href='#{{ member.id }}-modal'>
+		<img	src="/assets/images/{{ member.image }}"
+			alt="{{ member.name }}"
+			class="img-responsive img-circle border-primary"
+			width="100%;">
+		<div class="caption">
+			<h4 class="white">{{ member.name }}<br>
+				<small class="white">{{ member.role }}</small>
+			</h4>
+		</div>
+	</a>
+
+	{% if (member.bio) %}
+		<div class="modal fade" id="{{ member.id }}-modal">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						<h3>{{ member.name }}<br>
+							<small>{{ member.role }}</small>
+						</h3>
+					</div>
+					<div class="modal-body">
+						<p class="text-left">﻿{{ member.bio }}</p>
+					</div>
+					<div class="modal-footer">
+						{% if (member.twitter) %}
+							<a href="{{ member.twitter }}"
+								class="btn btn-info" role="button"
+								target="blank">
+								<i class="fa fa-twitter"></i> Twitter
+							</a>
+						{% endif  %}
+
+						{% if (member.linkedin) %}
+							<a href="{{ member.linkedin }}"
+								target="blank"
+								class="btn btn-primary" role="button">
+								<i class="fa fa-linkedin"></i> LinkedIn
+							</a>
+						{% endif  %}
+
+						{% if (member.website) %}
+							<a href="{{ member.website }}"
+								target="blank"
+								class="btn btn-default" role="button">
+								<i class="fa fa-globe"></i> Site Web
+							</a>
+						{% endif  %}
+					</div>
+				</div>
+			</div>
+		</div>
+	{% endif  %}

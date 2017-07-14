@@ -1,0 +1,68 @@
+<section id="panelistes" class="content-section text-center noselect bg-cover">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2 class="title white">Les Intervenants</h2>
+
+				<h3 class="title white">Panel 1: Les jeunes, l'Internet et les nouvelles technologies</h3>
+				<div class="row">
+					{% for presenter in site.data.2017.presenters.panel1 %}
+
+					{% capture modulo %}{{ forloop.index | mod:6 }}{% endcapture %}
+
+					{% if modulo == '0' %}
+					 	</div><div class="row">
+					{% endif %}
+
+					{% include partials/presenter.html %}
+
+					{% if modulo == '6' %}
+					 	</div><div class="row">
+					{% endif %}
+					{% endfor %}
+				</div>
+
+				<br>
+
+				<h3 class="title white">Panel 2: La gouvernance en Haïti,  l’apport des nouvelles technologies pour un développement humain, économique et social durable</h3>
+
+				<div class="row">
+					{% for presenter in site.data.2017.presenters.panel2 %}
+
+					{% capture modulo %}{{ forloop.index | mod:6 }}{% endcapture %}
+
+					{% if modulo == '0' %}
+					 	</div><div class="row">
+					{% endif %}
+
+					{% include partials/presenter.html %}
+
+					{% if modulo == '6' %}
+					 	</div><div class="row">
+					{% endif %}
+					{% endfor %}
+				</div>
+
+				<br>
+
+				<h3 class="title white">Panel 3: Les nouvelles inventions dans le TIC en Haiti en 2017</h3>
+				<div class="row">
+					{% for presenter in site.data.2017.presenters.panel3 %}
+
+					{% capture modulo %}{{ forloop.index | mod:6 }}{% endcapture %}
+
+					{% if modulo == '0' %}
+					 	</div><div class="row">
+					{% endif %}
+
+					{% include partials/presenter.html %}
+
+					{% if modulo == '6' %}
+					 	</div><div class="row">
+					{% endif %}
+					{% endfor %}
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

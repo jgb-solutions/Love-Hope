@@ -1,0 +1,36 @@
+<div class="col-sm-2 col-xs-6">
+	<a data-toggle="modal" href='#{{ presenter.id}}-modal'>
+		<img
+			src="/assets/images/{{ presenter.image }}"
+			alt="{{ presenter.name }}"
+			class="img-responsive img-rounded"
+			style="width: 100%">
+		<div class="caption">
+			<h4  style="color:white">{{ presenter.name }}<br>
+				<small  style="color:#ddd">{{ presenter.role }}</small>
+			</h4>
+		</div>
+	</a>
+
+	<div class="modal fade" id="{{ presenter.id}}-modal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header" hidden="true">
+					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h4 class="modal-title text-center">
+						{{ presenter.name}} <br>
+						<small>{{ presenter.role }}</small>
+					</h4>
+				</div>
+				<div class="modal-body" style="padding: 0">
+					<img
+						src="/assets/images/{{ presenter.splash}}"
+						alt="stephane Vincent"
+						class="img-responsive"
+						style="width: 100%">
+				</div>
+				<div class="modal-footer"  hidden="true"></div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,54 @@
+-     id: stephane
+      name: Stephane Vincent
+      splash: stephane.png
+      image: stephane-square.jpg
+      role: Coordonnateur Général de l'e-Gouvernance
+
+-     id: amos
+      name: Amos SINCIR
+      splash: amos.png
+      image: amos-square.jpg
+      role: Jeune Président d'Haiti
+
+-     id: james
+      name: James-Taylor LOUIS
+      splash: james.png
+      image: james-square.jpg
+      role: PDG 10kont.com
+
+-     id: athanase
+      name: Athanase Louis
+      splash: athanase.png
+      image: athanase-square.jpg
+      role: PDG Atalou Microsystem
+
+-     id: guy
+      name: Joseph Guyler C. Delva
+      splash: guy.png
+      image: guy-square.jpg
+      role: PDG de Haitian Caribbean News Network
+
+-     id: frederic
+      name: Fédérique Pierre
+      splash: frederic.png
+      image: frederic-square.jpg
+      role: PDG de 1 Click
+
+-     id: giovanni
+      name: Giovanni M. TOGLIA
+      splash: giovanni.png
+      image: giovanni-square.jpg
+      role: Directeur Technique Presso THESS ONLINE
+
+-     id: sam
+      name: Samuel Pierre
+      splash: sam.png
+      image: sam-square.jpg
+      role: PDG de TCS
+
+-     id: mic
+      name: Michael VERCH
+      splash: mic.png
+      image: mic-square.jpg
+      role: Vice-président AHTIC
+

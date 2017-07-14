@@ -1,0 +1,38 @@
+# -   name: CONATEL
+#     image: conatel-logo-500x500.png
+
+-   name: Juno7
+    image: juno7.jpg
+
+-   name: MDS
+    image: mds.jpg
+
+-   name: Ti Kwen Pam
+    image: ti-kwen-pam.jpg
+
+-   name: Eliacin
+    image: eliacin-500x500.jpg
+
+-   name: New Vision
+    image: new-vision-500x500.jpg
+
+-   name: IRET
+    image: iret.jpg
+
+-   name: Jethro - The Moment Photography
+    image: jethro.png
+
+-   name: FD Strategy
+    image: fd.jpg
+
+-   name: Kingo's
+    image: kingos.jpg
+
+-   name: Royal Oasis
+    image: royal.jpg
+
+-   name: Graphic Plus
+    image: graphic.jpg
+
+-   name: 1 Click
+    image: 1click.jpg

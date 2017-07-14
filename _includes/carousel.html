@@ -1,0 +1,16 @@
+<div id="carousel-id" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		{% for i in (1..8) %}
+		<li data-target="#carousel-id" data-slide-to="{{ forloop.index - 1 }}" class="{% if forloop.index == 1 %} {{ 'active'}} {% endif %}"></li>
+		{% endfor %}
+	</ol>
+	<div class="carousel-inner">
+		{% for presenter in site.data.2017.presenters.panel1 %}
+
+			{% include partials/slide.html %}
+
+		{% endfor %}
+	</div>
+	 <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	<a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div>

@@ -1,0 +1,27 @@
+<section id="sponsors" class="content-section text-center noselect ">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<h2  class="title">Sponsors</h2>
+
+				<div class="row">
+					{% for sponsor in site.data.2017.sponsors %}
+						{% capture modulo %}{{ forloop.index | mod:6 }}{% endcapture %}
+
+						{% if modulo == '0' %}
+						 	</div><div class="row">
+						{% endif %}
+
+						{% include partials/sponsor.html %}
+
+						{% if modulo == '6' %}
+						 	</div><div class="row">
+						{% endif %}
+					{% endfor %}
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>

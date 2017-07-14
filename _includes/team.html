@@ -1,0 +1,15 @@
+<section id="lequipe" class="content-section text-center noselect bg-cover">
+	<div class="container">
+		<h2 class="title white">L'Équipe</h2>
+
+		<div class="row">
+			<div class="col-sm-1 hidden-xs">
+			</div>
+			{% for member in site.data.2017.team %}
+				<div class="col-sm-2 col-xs-6">
+					{% include partials/member.html %}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
