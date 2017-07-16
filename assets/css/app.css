@@ -6924,13 +6924,6 @@ body {
   -ms-user-select: none;
   user-select: none;
 }
-a.navbar-brand {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-a.navbar-brand img {
-  height: 50px;
-}
 .border-white {
   border: 3px solid white;
 }
